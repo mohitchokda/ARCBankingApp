@@ -1,0 +1,88 @@
+/* BeneficiaryDetailsPage.css */
+
+.beneficiary-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.beneficiary-details-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.beneficiary-list {
+  margin-bottom: 20px;
+}
+
+.beneficiary-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.beneficiary-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: calc(33.33% - 15px); /* Adjust card width based on your design */
+  background-color: #fff;
+}
+
+.beneficiary-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.beneficiary-card.selected {
+  border-color: #09f324;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+
+.beneficiary-info h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.beneficiary-info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.payment-type {
+  margin-bottom: 20px;
+}
+
+.payment-type select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.complete-payment-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.complete-payment-btn:hover {
+  background-color: #0056b3;
+}
+
+.complete-payment-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
